@@ -1,0 +1,334 @@
+/* Configurações de base */
+:root {
+    --background-light: #f8f5f0; /* tom creme */
+    --background-dark: #1c1c1c; /* preto carvão */
+    --highlight-color: #FFD700; /* dourado clássico */
+    --accent-color: #8b0000; /* vermelho profundo */
+    --text-light: #f8f5f0; /* texto claro em fundo escuro */
+    --text-dark: #333; /* texto escuro em fundo claro */
+    --padding-small: 8px;
+    --padding-medium: 16px;
+    --padding-large: 24px;
+    --font-small: 14px;
+    --font-medium: 18px;
+    --font-large: 22px;
+    --border-radius: 8px;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+}
+
+/* Menu de navegação */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a, .btn-login {
+    color: var(--highlight-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, .btn-login:hover {
+    color: #fff;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Botão de cadastro */
+.btn-login {
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: var(--padding-small);
+    font-size: var(--font-small);
+    cursor: pointer;
+    color: var(--text-light);
+    transition: background-color 0.3s ease;
+}
+
+.product-container {
+    display: flex;
+}
+
+.image-gallery {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#main-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.thumbnails {
+    display: flex;
+    margin-top: 10px;
+}
+
+.thumbnails img {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 2px solid transparent;
+}
+
+.thumbnails img:hover {
+    border: 2px solid #000000; /* Preto */
+}
+
+.detalhes {
+    flex: 1;
+}
+
+.preco {
+    font-size: 1.5em;
+    color: #8B0000; /* Vermelho Rico */
+}
+
+.opcao {
+    margin: 20px 0;
+    color: #555555; /* Cinza */
+}
+
+.comentarios {
+    margin-top: 40px;
+}
+
+.comentario {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #FFD700; /* Dourado Retro */
+}
+
+/*produto2*/
+
+.product-container2 {
+    display: flex;
+}
+
+.image-gallery2 {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#main-image2 {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.thumbnails2 {
+    display: flex;
+    margin-top: 10px;
+}
+
+.thumbnails2 img {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 2px solid transparent;
+}
+
+.thumbnails2 img:hover {
+    border: 2px solid #000000; /* Preto */
+}
+
+.detalhes2 {
+    flex: 1;
+}
+
+.preco2 {
+    font-size: 1.5em;
+    color: #8B0000; /* Vermelho Rico */
+}
+
+.opcao2 {
+    margin: 20px 0;
+    color: #555555; /* Cinza */
+}
+
+.comentarios2 {
+    margin-top: 40px;
+}
+
+.comentario2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-photo2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #FFD700; /* Dourado Retro */
+}
+
+/*produto3*/
+
+.product-container3 {
+    display: flex;
+}
+
+.image-gallery3 {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#main-image3 {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.thumbnails3 {
+    display: flex;
+    margin-top: 10px;
+}
+
+.thumbnails3 img {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 2px solid transparent;
+}
+
+.thumbnails3 img:hover {
+    border: 2px solid #000000; /* Preto */
+}
+
+.detalhes3 {
+    flex: 1;
+}
+
+.preco3 {
+    font-size: 1.5em;
+    color: #8B0000; /* Vermelho Rico */
+}
+
+.opcao3 {
+    margin: 20px 0;
+    color: #555555; /* Cinza */
+}
+
+.comentarios3 {
+    margin-top: 40px;
+}
+
+.comentario3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-photo3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #FFD700; /* Dourado Retro */
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    padding: var(--padding-large);
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: center;
+}
+
+.footer-section {
+    flex-basis: 23%;
+    margin-bottom: var(--padding-medium);
+}
+
+.footer-section h4 {
+    font-size: var(--font-medium);
+    color: var(--highlight-color);
+    margin-bottom: var(--padding-small);
+}
+
+.footer-section p, .footer-section ul {
+    font-size: var(--font-small);
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.social-links a {
+    color: var(--highlight-color);
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: var(--padding-medium);
+    padding: var(--padding-small);
+    border-top: 1px solid #444;
+    font-size: var(--font-small);
+}

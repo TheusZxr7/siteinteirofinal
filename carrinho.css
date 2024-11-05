@@ -1,0 +1,237 @@
+/* Configurações de base */
+:root {
+    --background-light: #f8f5f0; /* tom creme */
+    --background-dark: #1c1c1c; /* preto carvão */
+    --highlight-color: #FFD700; /* dourado clássico */
+    --accent-color: #8b0000; /* vermelho profundo */
+    --text-light: #f8f5f0; /* texto claro em fundo escuro */
+    --text-dark: #333; /* texto escuro em fundo claro */
+    --padding-small: 8px;
+    --padding-medium: 16px;
+    --padding-large: 24px;
+    --font-small: 14px;
+    --font-medium: 18px;
+    --font-large: 22px;
+    --border-radius: 8px;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+}
+
+/* Menu de navegação */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a, .btn-login {
+    color: var(--highlight-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, .btn-login:hover {
+    color: #fff;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Botão de cadastro */
+.btn-login {
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: var(--padding-small);
+    font-size: var(--font-small);
+    cursor: pointer;
+    color: var(--text-light);
+    transition: background-color 0.3s ease;
+}
+
+/*carinho*/
+/* Título da Página */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Formulário de Aluguel */
+form {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form h2 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1em;
+}
+
+/* Botão Adicionar ao Carrinho */
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+}
+
+/* Estilo para o título "Itens no Carrinho" */
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para a lista de itens no carrinho */
+#itensCarrinho {
+    list-style-type: none; /* Remove os marcadores */
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza a lista */
+}
+
+#itensCarrinho li {
+    display: flex;
+    justify-content: space-between; /* Distribui espaço entre os elementos */
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+/* Estilo para o botão de remover */
+#itensCarrinho button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+#itensCarrinho button:hover {
+    background-color: #cc0000; /* Cor mais escura no hover */
+}
+
+/* Estilo para o texto "Total Final" */
+#total {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: right;
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    padding: var(--padding-large);
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: center;
+}
+
+.footer-section {
+    flex-basis: 23%;
+    margin-bottom: var(--padding-medium);
+}
+
+.footer-section h4 {
+    font-size: var(--font-medium);
+    color: var(--highlight-color);
+    margin-bottom: var(--padding-small);
+}
+
+.footer-section p, .footer-section ul {
+    font-size: var(--font-small);
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.social-links a {
+    color: var(--highlight-color);
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: var(--padding-medium);
+    padding: var(--padding-small);
+    border-top: 1px solid #444;
+    font-size: var(--font-small);
+}
